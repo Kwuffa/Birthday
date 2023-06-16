@@ -299,9 +299,9 @@ main .guitarAndMusic {
   position: relative;
 }
 main .guitarAndMusic p::after {
-  top: -2rem !important;
+  top: -2.5rem !important;
   left: -2rem !important;
-  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 90"><path fill="%23FFC0CB" d="M54.9,2.6c-9.1,0-17.6,4-23.3,11.1C27.8,5,21.7,0,14.9,0C6.7,0,0,6.7,0,14.9c0,3.5,1.2,6.7,3.2,9.3C1.2,26.6,0,29.8,0,33.3C0,43.5,7.8,51.3,17.9,51.3H54.9c6.8,0,12.3-5.5,12.3-12.3C67.2,8.1,61.7,2.6,54.9,2.6z"/><circle fill="%23FFC0CB" cx="70" cy="26.6" r="12.3"/><circle fill="%23FFC0CB" cx="42.1" cy="53.3" r="19.3"/><circle fill="%23FFC0CB" cx="42.1" cy="73.3" r="15"/><circle fill="%23FFC0CB" cx="17.1" cy="53.3" r="16"/><circle fill="%23FFC0CB" cx="20.1" cy="73" r="15"/><circle fill="%23FFC0CB" cx="35" cy="9" r="8"/><circle fill="%23FFC0CB" cx="73.3" cy="58" r="10.3"/></svg>') !important;
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 90"><path fill="%23FFC0CB" d="M54.9,2.6c-9.1,0-17.6,4-23.3,11.1C27.8,5,21.7,0,14.9,0C6.7,0,0,6.7,0,14.9c0,3.5,1.2,6.7,3.2,9.3C1.2,26.6,0,29.8,0,33.3C0,43.5,7.8,51.3,17.9,51.3H54.9c6.8,0,12.3-5.5,12.3-12.3C67.2,8.1,61.7,2.6,54.9,2.6z"/><circle fill="%23FFC0CB" cx="70" cy="26.6" r="12.3"/><circle fill="%23FFC0CB" cx="42.1" cy="53.3" r="19.3"/><circle fill="%23FFC0CB" cx="42.1" cy="73.3" r="10"/><circle fill="%23FFC0CB" cx="17.1" cy="53.3" r="16"/><circle fill="%23FFC0CB" cx="20.1" cy="73" r="13"/><circle fill="%23FFC0CB" cx="35" cy="9" r="8"/><circle fill="%23FFC0CB" cx="73.3" cy="58" r="10.3"/></svg>') !important;
 }
 main .conclusion {
   position: relative;

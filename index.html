@@ -22,7 +22,6 @@
                     </ul>
                 </div>
                 <div class="logo">
-                    <!-- <span>logo</span> -->
                     <img class="elephant_svg" src="images/logo/1296868.svg" alt="">
                 </div>
             </div>
@@ -162,5 +161,16 @@
     </div>
     <script src="scripts/gallery.js"></script>
     <script src="scripts/scrollAnimation.js"></script>
+    <script>
+        let headerWrapper = document.querySelector(".header_wrapper");
+        window.onscroll = function() {scrollFunc()};
+        function scrollFunc() {
+            if (document.documentElement.scrollTop > 10) {
+                headerWrapper.classList.add("active");
+            } else {
+                headerWrapper.classList.remove("active");
+            }
+        }
+    </script>
 </body>
 </html>

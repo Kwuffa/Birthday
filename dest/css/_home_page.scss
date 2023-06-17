@@ -1,21 +1,37 @@
 @keyframes animation_left{
     0%{
-        // opacity: 0;
-        transform: translateX(-50px);
+        transform: translateX(-4rem);
     }
     100%{
-        // opacity: 1;
+        transform: translateX(0);
+    }
+}
+@keyframes animation_left_header{
+    0%{
+        opacity: 0;
+        transform: translateX(-10rem);
+    }
+    100%{
+        opacity: 1;
         transform: translateX(0);
     }
 }
 @keyframes animation_right{
     0%{
-        // opacity: 0;
-        transform: translateX(50px);
+        transform: translateX(4rem);
     }
     100%{
-        // opacity: 1;
         transform: translateX(0);
+    }
+}
+@keyframes animation_up{
+    0%{
+        transform: translateY(-4rem);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
     }
 }
 
@@ -33,9 +49,22 @@ html{
     justify-content: space-between;
     align-items: center;
     padding: 1rem .7rem;
-    background: white;
+    background: none;
     z-index: 999;
-    border-bottom: 1px solid grey;
+    margin-top: 1rem;
+    transition: background .5s ease-out, box-shadow .5s ease-out, margin .5s ease-out;
+    &.active{
+        box-shadow: -1px -1px 10px rgba(255,255,255,.1), 1px 1px 15px rgba(0,0,0,.5);
+        background: white;
+        margin-top: 0;
+    }
+    .title_h2{
+        opacity: 0;
+        animation-name: animation_up;
+        animation-duration: .4s;
+        animation-timing-function: ease-out;
+        animation-fill-mode: forwards;
+    }
 }
 .menu {
     ul{
@@ -47,6 +76,30 @@ html{
             font-weight: 600;
             font-size: 1rem;
         }
+        li:first-child{
+            opacity: 0;
+            animation-name: animation_up;
+            animation-duration: .4s;
+            animation-timing-function: ease-out;
+            animation-fill-mode: forwards;
+            animation-delay: .2s;
+        }
+        li:nth-child(2){
+            opacity: 0;
+            animation-name: animation_up;
+            animation-duration: .4s;
+            animation-timing-function: ease-out;
+            animation-fill-mode: forwards;
+            animation-delay: .4s;
+        }
+        li:last-child{
+            opacity: 0;
+            animation-name: animation_up;
+            animation-duration: .4s;
+            animation-timing-function: ease-out;
+            animation-fill-mode: forwards;
+            animation-delay: .6s;
+        }
     }
 }
 .logo {
@@ -54,6 +107,12 @@ html{
     position: relative;
     width: 2rem;
     height: 2rem;
+    opacity: 0;
+    animation-name: animation_up;
+    animation-duration: .4s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+    animation-delay: .8s;
 }
 .elephant_svg{
     position: absolute;
@@ -66,7 +125,7 @@ html{
 .header_svg{
     width: 100%;
     position: absolute;
-    top: 3rem;
+    top: 0;
     left: 0;
     z-index: -1;
 }
@@ -117,15 +176,26 @@ main{
             font-family: 'Pacifico', cursive;
             color: #131313;
             text-shadow: 1px -1px 0 #767676, -1px 2px 1px #737272, -2px 4px 1px #767474, -3px 6px 1px #787777, -4px 8px 1px #7b7a7a, -5px 10px 1px #7f7d7d, -6px 12px 1px #828181, -7px 14px 1px #868585, -8px 16px 1px #8b8a89;
+            animation-name: animation_left_header;
+            animation-duration: .8s;
+            animation-timing-function: ease-out;
+            animation-fill-mode: forwards;
+            opacity: 0;
         }
         p{
-            max-width: 60%;
+            max-width: 70%;
             text-align: center;
             align-self: center;
             font-family: 'Amatic SC', cursive;
             font-size: 1.5rem;
             font-weight: 600;
             text-shadow: -1px -1px 1px rgba(255,255,255,.1), 1px 1px 1px rgba(0,0,0,.5);
+            animation-name: animation_left_header;
+            animation-delay: .3s;
+            animation-duration: .8s;
+            animation-timing-function: ease-out;
+            animation-fill-mode: forwards;
+            opacity: 0;
         }
     }
     section:not(:first-child){
@@ -200,6 +270,8 @@ main{
 .gallery{
     position: relative;
     margin-top: -6rem;
+    opacity: 0;
+    transition: opacity .8s ease-out;
     h2{
         text-align: center;
         font-size: 1.5rem;

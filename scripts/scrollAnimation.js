@@ -12,11 +12,15 @@ function isElementInViewport(element) {
 // Функция для обработки события прокрутки страницы
 function handleScroll() {
     let animatedObjects = Array.from(document.querySelectorAll('.scroll_animate'));
+    let gallery = document.querySelector(".gallery");
     animatedObjects.forEach(function(animatedObject) {
         if (isElementInViewport(animatedObject)) {
         animatedObject.classList.add("active");
         };
     });
+    if (isElementInViewport(gallery)) {
+        gallery.style.opacity = "1";
+    };
 };
 
 // Назначаем обработчик события прокрутки

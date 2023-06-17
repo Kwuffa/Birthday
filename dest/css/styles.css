@@ -485,6 +485,15 @@ main .conclusion p::after {
   top: 0;
   right: -2rem;
 }
+.gallery .previous {
+  margin-right: 16rem;
+}
+.gallery .previous button {
+  background: none;
+}
+.gallery .next button {
+  background: none;
+}
 .gallery .gallery_wrapper {
   display: -webkit-box;
   display: -ms-flexbox;

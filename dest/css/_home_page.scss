@@ -285,6 +285,18 @@ main{
         top: 0;
         right: -2rem;
     }
+    .previous{
+        // border: 1px solid red;
+        margin-right: 16rem;
+        button{
+            background: none;
+        }
+    }
+    .next{
+        button{
+            background: none;
+        }
+    }
     .gallery_wrapper{
         display: flex;
         align-items: center;

@@ -18,9 +18,6 @@ function handleScroll() {
         animatedObject.classList.add("active");
         };
     });
-    if (isElementInViewport(gallery)) {
-        gallery.style.opacity = "1";
-    };
 };
 
 // Назначаем обработчик события прокрутки

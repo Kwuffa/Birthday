@@ -270,8 +270,6 @@ main{
 .gallery{
     position: relative;
     margin-top: -6rem;
-    opacity: 0;
-    transition: opacity .8s ease-out;
     h2{
         text-align: center;
         font-size: 1.5rem;
@@ -287,7 +285,7 @@ main{
     }
     .previous{
         // border: 1px solid red;
-        margin-right: 16rem;
+        margin-right: 14rem;
         button{
             background: none;
         }
@@ -319,9 +317,11 @@ main{
             column-gap: .5rem;
             .slide{
                 width: 2rem;
-                height: 0.5rem;
+                height: 0.7rem;
                 border: 1px solid #FFFFCC;
-                border-radius: 30%;
+                border-radius: 40%;
+                background: white;
+                box-shadow: -1px -1px 1px #FFFFCC, 1px 1px 1px #FFFFCC;
                 &.active{
                     background: #FFFFCC;
                 }
@@ -331,7 +331,7 @@ main{
     .images_block{
         position: relative;
         &>img{
-            width: 14rem;
+            width: 13rem;
             border-radius: 15%;
             border: .3rem solid #FFC0CB;
         }   
@@ -419,6 +419,7 @@ main{
         font-family: 'Amatic SC', cursive;
         font-weight: 600;
         color: black;
+        font-size: .8rem;
     }
     .footer_content{
         display: flex;

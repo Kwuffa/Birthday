@@ -467,10 +467,6 @@ main .conclusion p::after {
 .gallery {
   position: relative;
   margin-top: -6rem;
-  opacity: 0;
-  -webkit-transition: opacity 0.8s ease-out;
-  -o-transition: opacity 0.8s ease-out;
-  transition: opacity 0.8s ease-out;
 }
 .gallery h2 {
   text-align: center;
@@ -486,7 +482,7 @@ main .conclusion p::after {
   right: -2rem;
 }
 .gallery .previous {
-  margin-right: 16rem;
+  margin-right: 14rem;
 }
 .gallery .previous button {
   background: none;
@@ -530,9 +526,12 @@ main .conclusion p::after {
 }
 .gallery .gallery_wrapper .slider .slide {
   width: 2rem;
-  height: 0.5rem;
+  height: 0.7rem;
   border: 1px solid #FFFFCC;
-  border-radius: 30%;
+  border-radius: 40%;
+  background: white;
+  -webkit-box-shadow: -1px -1px 1px #FFFFCC, 1px 1px 1px #FFFFCC;
+          box-shadow: -1px -1px 1px #FFFFCC, 1px 1px 1px #FFFFCC;
 }
 .gallery .gallery_wrapper .slider .slide.active {
   background: #FFFFCC;
@@ -541,7 +540,7 @@ main .conclusion p::after {
   position: relative;
 }
 .gallery .images_block > img {
-  width: 14rem;
+  width: 13rem;
   border-radius: 15%;
   border: 0.3rem solid #FFC0CB;
 }
@@ -636,6 +635,7 @@ main .conclusion p::after {
   font-family: "Amatic SC", cursive;
   font-weight: 600;
   color: black;
+  font-size: 0.8rem;
 }
 .footer_wrapper .footer_content {
   display: -webkit-box;
